@@ -46,8 +46,6 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
-		'app/libs/jquery.mask.min.js',  			//----jquery
-		'app/libs/jquery.validate.js',  			//----jquery
 		'app/libs/swiper/swiper.min.js', 			//----слайдер
 		'app/libs/src/fullpage.js', 		//----картінка прикліку
 		'app/libs/animation/wow.min.js', 		//----картінка прикліку
