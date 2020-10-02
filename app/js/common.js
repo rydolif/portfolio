@@ -123,9 +123,6 @@ $(function() {
   wow.init();
 
 
-});
-
-
 	//----------------------MODAL-----------------------
 	const modals = (triggerSelector, modalSelector, closeSelector) => {
 		const trigger = document.querySelectorAll(triggerSelector),
@@ -156,4 +153,7 @@ $(function() {
 
 	};
 	modals('.order__open', '.modal--order', '.modal--order .modal__close');
+
+});
+
 
