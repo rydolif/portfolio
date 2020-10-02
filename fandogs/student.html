@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Профиль студента</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/styles.min.css?v=1">
+
+</head>
+
+<body>
+
+	<header class="header header--page" id="header">
+		<div class="header__container">
+
+			<button class="hamburger" type="button">
+				<span class="hamburger__box">
+					<span class="hamburger__item"></span>
+				</span>
+			</button>
+
+			<a href="#" class="header__logo header__logo--page">
+				<img src="img/courses/logo.svg" alt="">
+			</a>
+
+			<nav class="header__nav">
+				<ul>
+					<li><a href="#">О школе</a></li>
+					<li><a href="#">Обучение</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li>
+						<a href="#">Блог
+							<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g><path d="M11 0H6L11 5V0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.29297 5.29297L9.29297 0.292969L10.7072 1.70718L5.70718 6.70718L4.29297 5.29297Z"/><path d="M0 3H2V11H0V3Z"/><path d="M8 9L8 11L-8.74228e-08 11L0 9L8 9Z"/></g></svg>
+						</a>
+					</li>
+					<li><span></span></li>
+					<li><a href="#">Мои курсы</a></li>
+					<li>
+						<a href="#" class="header__nav_logout">
+							<svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4"><rect x="5.25684" y="6" width="7.99995" height="2" fill="#1D2025"/><path d="M12.2568 11V3L16.2568 7L12.2568 11Z" fill="#1D2025"/><rect x="0.256836" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" y="12" width="8.99996" height="2" fill="#1D2025"/><rect x="0.256836" width="2.00002" height="14" fill="#1D2025"/></g>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div class=" header__info">
+				<a href="tel:+79818308696" class="header__info--page_tel header__info_tel">+7 (981) 830-86-96</a>
+				<div class="header__info_mail">
+					<img src="img/header__mail.svg" alt="">
+					<ul>
+						<li><a href="#" target="_blank"><img src="img/header__vk.svg" alt="">ФанДогс Вконтакте</a></li>
+						<li><a href="#" target="_blank"><img src="img/header__you.svg" alt="">Канал на YouTube</a></li>
+						<li><a href="#" target="_blank"><img src="img/header__in.svg" alt="">Instagram</a></li>
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+	</header>
+
+	<main class="main student">
+		<div class="student__container container">
+
+			<div class="student__nav">
+				<div class="student__nav_avatar"><img src="img/start/avatar2.png" alt=""></div>
+				<div class="student__nav_list">
+					<ul>
+						<li><a href="#" class="active">Кратко</a></li>
+						<li><a href="#">Подробно</a></li>
+					</ul>
+					<a href="#" class="student__nav_edit">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.2"><path d="M8.21312 4.15088L11.7485 7.68628L6.59228 12.8428L1.99609 13.9033L3.05663 9.30712L8.21312 4.15088ZM10.8348 1.52905L9.42065 2.94335L12.9562 6.47875L14.3704 5.06445L10.8348 1.52905Z" fill="#1D2025"/></g>
+						</svg>
+					</a>
+				</div>
+				<p class="student__nav_name">Антонина Весна</p>
+				<p class="student__nav_description">Живу и работаю в Санкт-Петербурге. Являюсь владельцем собаки породы Ньюфаундленд, которая считается плохо дрессируемой. Это моя первая собака, ...</p>
+				<ul class="student__nav_soc">
+					<li>
+						<a href="#">
+							<svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M13.7703 5.75729C14.301 6.27547 14.8612 6.76299 15.3372 7.33342C15.5475 7.58691 15.7466 7.8485 15.8989 8.14267C16.1147 8.56086 15.9192 9.02106 15.5442 9.04603L13.2133 9.04498C12.6121 9.09486 12.1325 8.85283 11.7293 8.44179C11.4066 8.11308 11.1077 7.76323 10.7974 7.42342C10.6702 7.28453 10.537 7.15385 10.3779 7.05055C10.0597 6.844 9.78353 6.90724 9.60169 7.23911C9.41649 7.57666 9.37449 7.95043 9.3563 8.32662C9.33133 8.87549 9.16542 9.01979 8.61407 9.04492C7.43578 9.10049 6.31753 8.92223 5.2787 8.32782C4.36284 7.80381 3.65263 7.06406 3.03447 6.22658C1.83089 4.59582 0.909193 2.80389 0.0808054 0.961756C-0.105658 0.546721 0.0307068 0.323932 0.488638 0.316047C1.24905 0.301275 2.00936 0.302327 2.77067 0.314996C3.07973 0.319517 3.28433 0.49678 3.40366 0.78875C3.81507 1.80034 4.31847 2.76278 4.95036 3.65488C5.11863 3.89239 5.29022 4.1299 5.53456 4.29707C5.80487 4.48217 6.01068 4.42082 6.13784 4.1197C6.21854 3.92877 6.25386 3.72312 6.27205 3.51862C6.3323 2.81509 6.34024 2.11276 6.23457 1.4117C6.1697 0.974163 5.92326 0.690919 5.48667 0.608122C5.26388 0.565909 5.29705 0.483007 5.40492 0.355842C5.59228 0.136523 5.76849 0 6.11976 0H8.75406C9.16878 0.0818505 9.26088 0.268156 9.31766 0.685452L9.31992 3.61162C9.3154 3.77316 9.40061 4.25254 9.69158 4.35947C9.92447 4.43559 10.078 4.24928 10.2177 4.10162C10.8484 3.4322 11.2986 2.64108 11.7007 1.8219C11.8792 1.46169 12.0327 1.08761 12.1814 0.713839C12.2916 0.436483 12.4645 0.300013 12.7769 0.306059L15.3122 0.308319C15.3874 0.308319 15.4635 0.309423 15.5363 0.321882C15.9635 0.394691 16.0806 0.578473 15.9486 0.995663C15.7407 1.6502 15.3362 2.19566 14.9407 2.74365C14.5179 3.32869 14.0657 3.89371 13.6464 4.48222C13.2611 5.01964 13.2917 5.29053 13.7703 5.75729Z" fill="#1D2025"/>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M0 2C0 0.895447 0.895416 0 2 0H8C9.10458 0 10 0.895447 10 2V14C10 15.1046 9.10458 16 8 16H2C0.895416 16 0 15.1046 0 14V2ZM2 2H8V12H2V2ZM5 15C5.55228 15 6 14.5523 6 14C6 13.4477 5.55228 13 5 13C4.44772 13 4 13.4477 4 14C4 14.5523 4.44772 15 5 15Z" fill="#1D2025"/></svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4"><path d="M12.4139 0.0428754C12.2803 0.0147768 12.1419 0 12 0H2C1.8581 0 1.71966 0.0147768 1.58612 0.0428755L6.30817 4.56726C6.69495 4.93785 7.30505 4.93785 7.69183 4.56726L12.4139 0.0428754Z" fill="#1D2025"/><path d="M13.9037 1.38524L9.0755 6.01138C7.91516 7.12315 6.08484 7.12315 4.9245 6.01138L0.0962601 1.38524C0.0337615 1.57892 0 1.78552 0 2V8C0 9.10457 0.89543 10 2 10H12C13.1046 10 14 9.10457 14 8V2C14 1.78552 13.9662 1.57892 13.9037 1.38524Z" fill="#1D2025"/></g>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.4"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10ZM7 8.5C7.82843 8.5 8.5 7.82843 8.5 7C8.5 6.17157 7.82843 5.5 7 5.5C6.17157 5.5 5.5 6.17157 5.5 7C5.5 7.82843 6.17157 8.5 7 8.5Z" fill="#1D2025"/><path d="M10.5 3C10.2239 3 10 3.22386 10 3.5C10 3.77614 10.2239 4 10.5 4C10.7761 4 11 3.77614 11 3.5C11 3.22386 10.7761 3 10.5 3Z" fill="#1D2025"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4C0 1.79086 1.79086 0 4 0H10C12.2091 0 14 1.79086 14 4V10C14 12.2091 12.2091 14 10 14H4C1.79086 14 0 12.2091 0 10V4ZM4 2C2.89543 2 2 2.89543 2 4V10C2 11.1046 2.89543 12 4 12H10C11.1046 12 12 11.1046 12 10V4C12 2.89543 11.1046 2 10 2H4Z" fill="#1D2025"/></g></svg>
+						</a>
+					</li>
+				</ul>
+				<div class="student__nav_dogs">
+					<h4>Мои собаки</h4>
+					<div>
+						<div class="student__nav_dogs--img"><img src="img/start/dogs2.png" alt=""></div>
+						<p>Белка</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="student__main">
+				<p class="student__main_title">Мои курсы</p>
+
+				<div class="student__content">
+					<div class="student__content_header">
+						<span class="student__content_header--label">В процессе</span>
+						<svg width="225" height="154" viewBox="0 0 225 154" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M151 -4.52064e-05L86 65.0002L98.0215 77.0218L163.022 12.0215L151 -4.52064e-05Z" fill="#67ACFF"/><path d="M50.0002 52L0 102L6.36331 108.364L56.3635 58.3633L50.0002 52Z" fill="#7B6ECF"/><path d="M151.761 136.996L142.756 127.991C139.689 124.926 138 120.849 138 116.512C138 112.176 139.689 108.099 142.756 105.032C145.821 101.967 149.898 100.277 154.235 100.277C158.571 100.277 162.648 101.967 165.715 105.033C169.316 108.633 175.173 108.634 178.774 105.033C180.519 103.288 181.479 100.97 181.479 98.5029C181.479 96.0362 180.519 93.7168 178.774 91.9736C172.445 85.6426 172.445 75.3438 178.773 69.0137C185.105 62.6836 195.403 62.6846 201.733 69.0127C203.478 70.7578 205.797 71.7188 208.264 71.7188C210.73 71.7188 213.049 70.7578 214.794 69.0137C216.538 67.2695 217.498 64.9502 217.498 62.4844C217.498 60.0176 216.538 57.6982 214.794 55.9541L205.789 46.9492L210.738 42L219.743 51.0049C222.81 54.0703 224.498 58.1475 224.498 62.4844C224.498 66.8203 222.81 70.8975 219.743 73.9629C216.677 77.0293 212.6 78.7188 208.264 78.7188C203.927 78.7188 199.85 77.0293 196.783 73.9629C193.184 70.3633 187.325 70.3623 183.724 73.9639C180.124 77.5635 180.124 83.4228 183.725 87.0234C186.79 90.0889 188.479 94.166 188.479 98.5029C188.479 102.839 186.79 106.916 183.724 109.982C180.658 113.049 176.581 114.737 172.244 114.737C167.908 114.737 163.831 113.049 160.766 109.982C159.02 108.238 156.702 107.277 154.235 107.277C151.769 107.277 149.449 108.238 147.706 109.982C145.961 111.727 145 114.046 145 116.512C145 118.979 145.961 121.298 147.705 123.041L156.71 132.047L151.761 136.996Z" fill="#2F80ED"/><path d="M86 154C93.1797 154 99 148.18 99 141C99 133.82 93.1797 128 86 128C78.8203 128 73 133.82 73 141C73 148.18 78.8203 154 86 154Z" fill="#9B94F7"/></svg>
+						<h3>Базовый курс — продвинутый №8</h3>
+						<p>
+							<b>Старт курса</b>
+							<span>7 апреля 2019</span>
+						</p>
+						<p>
+							<b>Длительность</b>
+							<span>6 недель</span>
+						</p>
+					</div>
+					<div class="student__content_wrap">
+						<table class="student__content_table">
+							<tr>
+								<th></th>
+								<th>Тема</th>
+								<th>Задание</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Тема №1</td>
+								<td>
+									<p class="student__content_table--title">Знакомство</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 221</span>
+										<span>
+											<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0.10083L8.8541 4.90908L14 5.18663L10 8.43582L11.3262 13.4156L7 10.6154L2.67376 13.4156L4 8.43582L0 5.18663L5.1459 4.90908L7 0.10083Z" fill="#F59134"/></svg>
+											1
+										</span> 
+										<b>3</b>
+									</p>
+								</td>
+								<td>
+									<p class="student__content_table--title">Оценка: 10</p>
+									<p>Комментариев 2</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">7 Апр 2019</time>
+								</td>
+							</tr>
+							<tr>
+								<td>Вебинар</td>
+								<td>
+									<p class="student__content_table--title">Соревнования и испытания. Что это? <br>Зачем? И как?</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 172</span>
+										<b>38</b>
+									</p>
+								</td>
+								<td>
+									
+								</td>
+								<td>
+									<time datetime="1969-07-16">12 Апр 2019 </time>
+									<time datetime="1969-07-16">19:00 МСК</time>
+								</td>
+							</tr>
+							<tr class="student__content_table--active">
+								<td>Тема №2</td>
+								<td>
+									<p class="student__content_table--title">«Рядом» + «Комплекс»</p>
+									<p class="student__content_table--content">
+										<span>Комментариев</span>
+										<b>121</b>
+									</p>
+								</td>
+								<td class="student__content_table--no-comments">
+									<p>Еще не оценено</p>
+									<p>Нет комментариев</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">15 Апр 2019</time>
+								</td>
+							</tr>
+							<tr class="student__content_table--disable">
+								<td>Тема №3</td>
+								<td><p>«Апорт» + начало в команде «Место»</p></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="student__content_table--disable">
+								<td>Тема №4</td>
+								<td><p>Сбор Схемы. Рапорт.</p></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="student__content_table--disable">
+								<td>Тема №5</td>
+								<td><p>Команда «Место»</p></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr class="student__content_table--disable">
+								<td>Тема №6</td>
+								<td><p>Подведение итогов</p></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+						<div class="student__content_members">
+							<h4>Участники <span>(21)</span></h4>
+							<ul>
+								<li><a href="#"><img src="img/start/avatar2.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar3.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar4.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar5.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar6.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar7.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar8.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar9.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar10.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar11.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar12.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar13.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar14.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar15.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar16.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar17.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar18.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar19.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar20.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar21.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar22.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="student__content student__content--final">
+					<div class="student__content_header">
+						<span class="student__content_header--label">Закончен</span>
+						<svg width="198" height="129" viewBox="0 0 198 129" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M143 -0.000121892L116 27L120.994 31.9936L147.994 4.99344L143 -0.000121892Z" fill="#C2ECFF"/><path d="M50.0002 7.00002L0 57.0002L6.36331 63.3636L56.3635 13.3633L50.0002 7.00002Z" fill="#F4EDEB"/><path d="M124.761 128.996L115.756 119.991C112.689 116.926 111 112.849 111 108.512C111 104.176 112.689 100.099 115.756 97.0322C118.821 93.9668 122.898 92.2774 127.235 92.2774C131.571 92.2774 135.648 93.9668 138.715 97.0332C142.316 100.633 148.173 100.634 151.774 97.0332C153.519 95.2881 154.479 92.9697 154.479 90.5029C154.479 88.0362 153.519 85.7168 151.774 83.9736C145.445 77.6426 145.445 67.3438 151.773 61.0137C158.105 54.6836 168.403 54.6846 174.733 61.0127C176.478 62.7578 178.797 63.7188 181.264 63.7188C183.73 63.7188 186.049 62.7578 187.794 61.0137C189.538 59.2695 190.498 56.9502 190.498 54.4844C190.498 52.0176 189.538 49.6982 187.794 47.9541L178.789 38.9492L183.738 34L192.743 43.0049C195.81 46.0703 197.498 50.1475 197.498 54.4844C197.498 58.8203 195.81 62.8975 192.743 65.9629C189.677 69.0293 185.6 70.7188 181.264 70.7188C176.927 70.7188 172.85 69.0293 169.783 65.9629C166.184 62.3633 160.325 62.3623 156.724 65.9639C153.124 69.5635 153.124 75.4228 156.725 79.0234C159.79 82.0889 161.479 86.166 161.479 90.5029C161.479 94.8389 159.79 98.916 156.724 101.982C153.658 105.049 149.581 106.737 145.244 106.737C140.908 106.737 136.831 105.049 133.766 101.982C132.02 100.238 129.702 99.2773 127.235 99.2773C124.769 99.2773 122.449 100.238 120.706 101.982C118.961 103.727 118 106.046 118 108.512C118 110.979 118.961 113.298 120.705 115.041L129.71 124.047L124.761 128.996Z" fill="white"/>
+						</svg>
+
+						<h3>Базовый курс — начало №11</h3>
+						<p>
+							<b>Старт курса</b>
+							<span>12 декабря 2018</span>
+						</p>
+						<p>
+							<b>Длительность</b>
+							<span>6 недель</span>
+						</p>
+					</div>
+					<div class="student__content_wrap">
+						<table class="student__content_table">
+							<tr>
+								<th></th>
+								<th>Тема</th>
+								<th>Задание</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>Тема №1</td>
+								<td>
+									<p class="student__content_table--title">Знакомство</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 221</span>
+										<b>3</b>
+									</p>
+								</td>
+								<td>
+									<p class="student__content_table--title">Оценка: 8</p>
+									<p>Комментариев 2</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">12 Дек 2018</time>
+								</td>
+							</tr>
+							<tr>
+								<td>Тема №2</td>
+								<td>
+									<p class="student__content_table--title">Наведение</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 125</span>
+										<span>
+											<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0.10083L8.8541 4.90908L14 5.18663L10 8.43582L11.3262 13.4156L7 10.6154L2.67376 13.4156L4 8.43582L0 5.18663L5.1459 4.90908L7 0.10083Z" fill="#F59134"/></svg>
+											2
+										</span> 
+									</p>
+								</td>
+								<td>
+									<p class="student__content_table--title">Оценка: 9</p>
+									<p>Комментариев 2</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">19 Дек 2018 </time>
+								</td>
+							</tr>
+							<tr>
+								<td>Тема №3</td>
+								<td>
+									<p class="student__content_table--title">Развитие тела и ума собаки</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 391</span>
+									</p>
+								</td>
+								<td>
+									<p class="student__content_table--title">Оценка: 7</p>
+									<p>Комментариев 2</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">26 Дек 2018</time>
+								</td>
+							</tr>
+							<tr>
+								<td>Вебинар</td>
+								<td>
+									<p class="student__content_table--title">Мотивация собаки</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 172</span>
+										<span>
+											<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0.10083L8.8541 4.90908L14 5.18663L10 8.43582L11.3262 13.4156L7 10.6154L2.67376 13.4156L4 8.43582L0 5.18663L5.1459 4.90908L7 0.10083Z" fill="#F59134"/></svg>
+											9
+										</span> 
+									</p>
+								</td>
+								<td></td>
+								<td>
+									<time datetime="1969-07-16">12 Апр 2019 </time>
+									<time datetime="1969-07-16">19:00 МСК</time>
+								</td>
+							</tr>
+							<tr>
+								<td>Тема №4</td>
+								<td>
+									<p class="student__content_table--title">Команда «Рядом»</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 81</span>
+										<span>
+											<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 0.10083L8.8541 4.90908L14 5.18663L10 8.43582L11.3262 13.4156L7 10.6154L2.67376 13.4156L4 8.43582L0 5.18663L5.1459 4.90908L7 0.10083Z" fill="#F59134"/></svg>
+											12
+										</span> 
+									</p>
+								</td>
+								<td>
+									<p class="student__content_table--title">Оценка: 9</p>
+									<p>Комментариев 2</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">26 Дек 2018</time>
+								</td>
+							</tr>
+							<tr>
+								<td>Тема №5</td>
+								<td>
+									<p class="student__content_table--title">Команда «Ко мне»</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 227</span>
+										<b>1</b>
+									</p>
+								</td>
+								<td>
+									<p class="student__content_table--title">Оценка: 7</p>
+									<p>Комментариев 2</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">26 Дек 2018</time>
+								</td>
+							</tr>
+							<tr>
+								<td>Тема №6</td>
+								<td>
+									<p class="student__content_table--title">Физическое и эмоциональное <br> состояние собаки во время тренировок</p>
+									<p class="student__content_table--content">
+										<span>Комментариев 412</span>
+										<b>1</b>
+									</p>
+								</td>
+								<td>
+									<p class="student__content_table--title">Оценка: 10</p>
+									<p>Комментариев 2</p>
+								</td>
+								<td>
+									<time datetime="1969-07-16">26 Дек 2018</time>
+								</td>
+							</tr>
+							<tr class="student__content_table--result">
+								<td>Ваш отзыв</td>
+								<td>Опубликован 1 Янв 2019</td>
+								<td colspan="2"><p>Оценка за курс <span>8,33</span></p></td>
+							</tr>
+						</table>
+
+						<div class="student__content_members">
+							<h4>Участники <span>(17)</span></h4>
+							<ul>
+								<li><a href="#"><img src="img/start/avatar2.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar3.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar4.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar5.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar6.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar7.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar8.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar9.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar10.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar11.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar12.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar13.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar14.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar15.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar16.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar17.png" alt=""></a></li>
+								<li><a href="#"><img src="img/start/avatar18.png" alt=""></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container">
+
+			<div class="footer__col--first footer__col">
+				<a href="#" class="footer__logo">
+					<img src="img/footer__logo.svg" alt="">
+				</a>
+				<form class="footer__form">
+					<p>
+						Новости школы, полезные статьи
+						<br>и обучающие видео в вашей почте
+					</p>
+					<div class="footer__form_line">
+						<input type="email" placeholder="Ваш email">
+						<button>
+							<svg width="27" height="12" viewBox="0 0 27 12" xmlns="http://www.w3.org/2000/svg"><rect y="5" width="22" height="2"/><path d="M21 12V0L27 6L21 12Z"/></svg>
+						</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="footer__wrap">
+
+				<div class="footer__col">
+					<div>
+						<h3>ФанДогс</h3>
+						<ul>
+							<li><a href="#">О школе</a></li>
+							<li><a href="#">Обучение</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li>
+								<a href="#">Блог
+									<svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg"><g><path d="M11 0H6L11 5V0Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M4.29297 5.29297L9.29297 0.292969L10.7072 1.70718L5.70718 6.70718L4.29297 5.29297Z"/><path d="M0 3H2V11H0V3Z"/><path d="M8 9L8 11L-8.74228e-08 11L0 9L8 9Z"/></g></svg>
+								</a>
+							</li>
+							<li><a href="#">Мои курсы</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="footer__col">
+					<h3>Мы Вконтакте</h3>
+					<!--
+					<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
+					 VK Widget 
+					<div id="vk_groups"></div>
+					<script type="text/javascript">
+					VK.Widgets.Group("vk_groups", {mode: 3}, 65937795);
+					</script>
+					-->
+				</div>
+
+				<div class="footer__col">
+					<div>
+						<h3>Контакты</h3>
+						<p>9:00—20:00</p>
+						<p><a href="tel:+79818308696">+7 (981) 830-86-96</a></p>
+						<div class="footer__soc">
+							<a href="#" target="_blank">
+								<svg width="14" height="10" viewBox="0 0 14 10" xmlns="http://www.w3.org/2000/svg"><g><path d="M12.4139 0.0428754C12.2803 0.0147768 12.1419 0 12 0H2C1.8581 0 1.71966 0.0147768 1.58612 0.0428755L6.30817 4.56726C6.69495 4.93785 7.30505 4.93785 7.69183 4.56726L12.4139 0.0428754Z" fill="white"/><path d="M13.9037 1.38524L9.0755 6.01138C7.91516 7.12315 6.08484 7.12315 4.9245 6.01138L0.0962601 1.38524C0.0337615 1.57892 0 1.78552 0 2V8C0 9.10457 0.89543 10 2 10H12C13.1046 10 14 9.10457 14 8V2C14 1.78552 13.9662 1.57892 13.9037 1.38524Z"/></g></svg>
+							</a>
+							<a href="#" target="_blank">
+								<svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><g opacity="0.8"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 10C8.65685 10 10 8.65685 10 7C10 5.34315 8.65685 4 7 4C5.34315 4 4 5.34315 4 7C4 8.65685 5.34315 10 7 10ZM7 8.5C7.82843 8.5 8.5 7.82843 8.5 7C8.5 6.17157 7.82843 5.5 7 5.5C6.17157 5.5 5.5 6.17157 5.5 7C5.5 7.82843 6.17157 8.5 7 8.5Z"/><path d="M10.5 3C10.2239 3 10 3.22386 10 3.5C10 3.77614 10.2239 4 10.5 4C10.7761 4 11 3.77614 11 3.5C11 3.22386 10.7761 3 10.5 3Z"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 4C0 1.79086 1.79086 0 4 0H10C12.2091 0 14 1.79086 14 4V10C14 12.2091 12.2091 14 10 14H4C1.79086 14 0 12.2091 0 10V4ZM4 2C2.89543 2 2 2.89543 2 4V10C2 11.1046 2.89543 12 4 12H10C11.1046 12 12 11.1046 12 10V4C12 2.89543 11.1046 2 10 2H4Z"/></g></svg>
+							</a>
+							<a href="#" target="_blank">
+								<svg width="16" height="11" viewBox="0 0 16 11" xmlns="http://www.w3.org/2000/svg"><path d="M15.32 1.02593C14.886 0.278744 14.415 0.141308 13.456 0.0890433C12.498 0.0261323 10.089 0 8.002 0C5.911 0 3.501 0.0261324 2.544 0.0880755C1.587 0.141308 1.115 0.277776 0.677 1.02593C0.23 1.77216 0 3.05748 0 5.32034C0 5.32227 0 5.32324 0 5.32324C0 5.32518 0 5.32615 0 5.32615V5.32808C0 7.58126 0.23 8.87626 0.677 9.61474C1.115 10.3619 1.586 10.4974 2.543 10.5603C3.501 10.6145 5.911 10.6465 8.002 10.6465C10.089 10.6465 12.498 10.6145 13.457 10.5613C14.416 10.4984 14.887 10.3629 15.321 9.61571C15.772 8.87723 16 7.58223 16 5.32905C16 5.32905 16 5.32615 16 5.32421C16 5.32421 16 5.32227 16 5.32131C16 3.05748 15.772 1.77216 15.32 1.02593ZM6 8.22683V2.41966L11 5.32324L6 8.22683Z"/></svg>
+							</a>
+						</div>
+					</div>
+					<div class="footer__copy">© FanDogs 2019</div>				 
+				</div>
+
+			</div>
+    
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

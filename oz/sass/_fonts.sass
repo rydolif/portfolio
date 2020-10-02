@@ -1,0 +1,41 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('Raleway', normal, 900, '../webfonts/Raleway-Black.woff2')
+@include font('Raleway', italic, 900, '../webfonts/Raleway-BlackItalic.woff2')
+
+@include font('Raleway', normal, 800, '../webfonts/Raleway-ExtraBold.woff2')
+@include font('Raleway', italic, 800, '../webfonts/Raleway-ExtraBoldItalic.woff2')
+
+@include font('Raleway', normal, 700, '../webfonts/Raleway-Bold.woff2')
+@include font('Raleway', italic, 700, '../webfonts/Raleway-BoldItalic.woff2')
+
+@include font('Raleway', normal, 500, '../webfonts/Raleway-Medium.woff2')
+@include font('Raleway', italic, 500, '../webfonts/Raleway-MediumItalic.woff2')
+
+@include font('Raleway', normal, 400, '../webfonts/Raleway-Regular.woff2')
+@include font('Raleway', italic, 400, '../webfonts/Raleway-Italic.woff2')
+
+@include font('Raleway', normal, 300, '../webfonts/Raleway-Light.woff2')
+@include font('Raleway', italic, 300, '../webfonts/Raleway-LightItalic.woff2')
+
+@include font('Raleway', normal, 200, '../webfonts/Raleway-Thin.woff2')
+@include font('Raleway', italic, 200, '../webfonts/Raleway-ThinItalic.woff2')
+

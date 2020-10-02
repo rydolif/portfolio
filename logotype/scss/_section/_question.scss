@@ -1,0 +1,51 @@
+
+
+.question {
+	padding: 65px 0;
+
+	&__title {
+		font-size: 32px;
+		font-weight: 600;
+		font-family: $title;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		@extend .cards__text;
+		margin-bottom: 25px;
+	}
+
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+
+		&_line {
+			width: 40%;
+			margin-bottom: 10px;
+			margin-right: 3%;
+		}
+
+		&_btn {
+			width: 14%;
+			margin-bottom: 10px;
+		}
+
+		input {
+			height: 50px;
+			border-color: $border;
+			border-radius: 4px;
+
+			&:hover,
+			&:focus {
+				border-color: var(--accent);
+			}
+		}
+
+		button {
+			height: 50px;
+			min-width: 100%;
+			max-width: 100%;
+		}
+	}
+}

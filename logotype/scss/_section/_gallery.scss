@@ -1,0 +1,86 @@
+
+.gallery {
+	padding: 65px 0;
+	box-shadow: 0px 8px 32px rgba(49, 49, 49, 0.1) inset;
+
+	&__title {
+		@extend h2;
+	}
+
+	&__text {
+		@extend .cards__text;
+		margin-bottom: 45px;
+	}
+
+	&__grid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-bottom: 15px;
+	}
+
+	&__item {
+		display: block;
+		margin: 0.2%;
+
+		img {
+			width: 100%;
+		}
+
+		&_50 {
+			width: 49.6%;
+		}
+
+		&_25 {
+			width: 24.6%;
+		}
+
+		&_12 {
+			width: 12.1%;
+		}
+	}
+
+	&__more {
+		display: flex;
+		align-items: center;
+		font-size: 18px;
+		color: var(--accent);
+		cursor: pointer;
+		transition: all .6s;
+
+		&:hover,
+		&:focus {
+			color: var(--accent--hover);
+
+			svg, path {
+				fill: var(--accent--hover);
+			}
+		}
+
+		svg, path {
+			margin-right: 10px;
+			fill: var(--accent);
+		}
+	}
+
+	&--dark {
+		.gallery__more {
+			color: $white;
+
+			svg, path {
+				fill: $white;
+			}
+
+			&:hover,
+			&:focus {
+				color: $border;
+
+				svg, path {
+					fill: $border;
+				}
+			}
+		}
+	}
+
+}

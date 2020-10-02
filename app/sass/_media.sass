@@ -1,0 +1,491 @@
+@media only screen and (max-height : 580px)
+	.nav__arrow
+		display: none
+
+@media only screen and (max-height : 400px)
+	.soc
+		display: none
+
+//-----------------------------------------
+
+@media only screen and (max-width : 1600px)
+	.portfolio__pagination
+		right: -3.7vw !important
+
+	.contacts__form_btn
+		justify-content: center
+		margin-top: 4vw
+
+	.nav
+		&__list a
+			padding: 
+				left: 25px
+				right: 25px
+
+		&__arrow
+			a
+				margin-bottom: 20px
+
+	.soc
+		bottom: 30px
+	
+	.site
+		&--fructs
+			&__main_modal
+				width: 40%
+				right: 0
+
+			&__item img
+				display: block
+				margin: 0 auto 30px
+				width: 100%
+			
+			&__action
+
+				&_wrap
+					img
+						&:nth-child(1)
+							left: 70%
+
+			&__cart_item
+				left: 70%
+
+	.portfolio__text h2,
+	.portfolio__text p
+		margin-bottom: 30px
+
+
+@media only screen and (max-width : 1300px)
+	body
+		font-size: 16px
+
+
+@media only screen and (max-width : 1200px)
+	input
+		height: 50px
+		line-height: 50px
+		font-size: 16px
+
+		&::placeholder
+			line-height: 50px
+			font-size: 16px
+
+	.btn
+		height: 50px
+		padding: 0 40px
+		font-size: 18px
+
+	.fullpage-wrapper
+		padding-right: 50px
+
+	.soc
+		bottom: 20px
+		left: 20px
+
+	.logo
+		top: 20px
+		left: 20px
+
+	.nav
+		width: 50px
+
+		a
+			font-size: 16px
+
+		&__list a
+			height: 50px
+			padding: 
+				top: 15px
+				bottom: 15px
+			
+	
+	.portfolio
+		&__slider
+			max-width: 75vw
+			width: 100%
+
+		&__item
+			display: flex
+			align-items: center
+
+			img
+				display: block
+				height: auto
+				width: 60%
+				margin: auto
+	
+		&__pagination
+			right: -35px !important
+
+		&__text p
+			margin-bottom: 3vw
+			letter-spacing: 25px
+			margin-right: -15px
+
+	.contacts
+		&__info,
+		&__wrap
+			max-width: 48%
+
+		p
+			margin-bottom: 3vw
+			letter-spacing: 25px
+	
+		&__info a
+			margin-bottom: 1.8vw
+
+		&__form
+			&_line
+				margin-bottom: 3vw
+
+			&_btn
+				justify-content: flex-start
+
+	.site
+		&--orphan
+
+			&__sub-title
+				margin-bottom: 7vh !important
+				font-size: 14px
+
+			&__hero
+				min-height: auto
+				padding: 7% 0
+				margin-bottom: 0
+
+				p
+					margin-bottom: 7% !important
+
+			&__about
+				margin-bottom: 5vh
+
+				&_text
+					width: 65%
+
+			&__main
+				padding-bottom: 0
+
+				&_img img:nth-child(2)
+					top: 3vh
+
+			&__catalog
+				padding-bottom: 8vh
+
+			&__product
+				padding-bottom: 35%
+
+			&__cart
+				img
+					margin-bottom: 5%
+
+			&__autorization
+				padding-bottom: 0
+
+				&_wrap img:nth-child(2)
+					top: 5vh
+
+			&__contacts
+				padding-bottom: 5vh
+
+		&--contacts
+			min-height: auto
+			padding: 10% 0
+
+		&--fructs
+			&__dashboard
+				padding-bottom: 10vh
+
+
+@media only screen and (max-width : 992px)
+	.portfolio__text p,
+	.contacts p
+		letter-spacing: 15px
+
+	.portfolio
+		&__item
+			img
+				width: 75%
+
+		&__text
+			font-size: 14px
+
+	.site
+		&--orphan
+			&__about_text
+				font-size: 14px
+		
+
+			&__product
+				padding-bottom: 28%
+
+				&_wrap img
+					&:nth-child(2)
+						top: 10px
+
+
+@media only screen and (max-width : 767px)
+	.hero__block_text
+		letter-spacing: 25px
+
+	.portfolio
+
+		&__item
+			width: 90%
+
+			img
+				width: 100%
+
+		&__text
+			right: 50%
+
+		&__arrow
+			display: none
+
+	.btn
+		height: 40px
+
+	.contacts
+		p, a
+			margin: 0 auto 5px
+
+		&__container
+			max-width: 80%
+
+		&__info,
+		&__wrap
+			max-width: 300px
+			text-align: center
+			margin: 0 auto
+
+		&__wrap
+			margin-bottom: 20px
+
+		&__form
+			&_btn
+				justify-content: center
+	
+	.btn
+		span
+			display: none
+
+	input
+		height: 40px
+		line-height: 40px
+		font-size: 14px
+
+
+		&::placeholder
+			height: 40px
+			line-height: 40px
+			font-size: 14px
+
+	.site
+		margin-right: 40px
+
+		.animated
+			&::after
+				display: none
+
+		&--orphan
+			&__sub-title
+				display: block
+				width: 100%
+				margin-bottom: 15px !important
+				letter-spacing: 15px
+
+			&__hero
+				padding: 70px 0
+
+				h1
+					font-size: 5.2vw
+
+			&__about
+
+				&_text
+					width: 100%
+
+			&__main
+				padding-bottom: 7vh
+
+				&_img
+					display: none
+
+			&__product
+				padding-bottom: 7vh
+
+				&_wrap
+					display: none
+
+			&__autorization
+				padding-bottom: 7vh
+
+				img
+					width: 100% !important
+
+				&_wrap
+					img
+						margin-bottom: 0
+
+						&:first-child
+							display: none
+
+						&:nth-child(2)
+							top: 0
+
+				&_item
+					display: none
+
+			&__cart
+				padding-bottom: 7vh
+
+				img
+					&:nth-child(3)
+						margin-bottom: 0
+
+				&_item
+					display: none
+		
+		&--burger
+			&__main
+				padding-bottom: 7vh !important
+
+			&__promotions
+				padding-bottom: 7vh
+
+				p
+					position: relative
+					transform: rotate(0)
+					left: 0
+					top: 0
+
+				img
+					width: 100%
+		
+		&--fructs
+			&__main_modal
+				display: none
+
+			&__item img
+				margin-bottom: 0
+
+			&__action
+				padding-bottom: 10vh
+
+				&_wrap
+					display: none
+
+
+			&__cart
+				padding-bottom: 10vh
+
+				img
+					width: 100%
+
+				&_item
+					display: none
+
+			&__dashboard
+
+				&_wrap
+					p
+						display: none
+
+				img
+					width: 100%
+					height: auto
+
+					&:nth-child(1)
+						display: none
+
+					&:nth-child(2)
+						margin-top: 0
+
+	.logo
+		top: 10px
+		left: 10px
+
+	.soc
+		bottom: 10px
+		left: 10px
+
+		a
+			width: 35px
+			height: 35px
+
+
+@media only screen and (max-width : 480px)
+
+	.contacts__info_before
+		display: none
+
+	.logo
+		top: 5px
+		left: 5px
+		padding: 5px
+		background-color: #ebebeb
+		border-radius: 5px
+
+	.soc
+		a
+			width: 30px
+			height: 30px
+
+	.nav
+		width: 40px
+
+		&__list
+
+			a
+				height: 40px
+				padding:
+					top: 10px
+					bottom: 10px
+				font-size: 14px
+	
+	.fullpage-wrapper
+		padding-right: 40px
+
+	.btn
+		font-size: 14px
+		letter-spacing: 1px
+		width: 100%
+	
+	.contacts,
+	.portfolio__text
+		p
+			letter-spacing: 5px
+
+	.contacts__container
+		max-width: 88%
+
+	.portfolio__text h2
+		margin-bottom: 30px
+
+	.site--orphan
+		text-align: center
+		
+		&__sub-title
+			letter-spacing: 5px
+			text-align: center
+
+		&__hero
+			padding-bottom: 30px
+
+			&_text
+				width: 100%
+
+				h1
+					text-align: center
+					font-size: 24px
+					margin-bottom: 20px
+
+				p
+					align-self: center
+					text-align: center
+
+			&_bunner
+				display: none
+
+		&__about_text
+			font-size: 12px
+		

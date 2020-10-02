@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Konstruktor 3</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:600&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container container">
+
+			<button class="hamburger" type="button">
+				<span class="hamburger__item"></span>
+			</button>
+
+			<nav class="header__nav nav">
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Наши тренеры</a></li>
+					<li><a href="#">Список упражнений</a></li>
+				</ul>
+			</nav>
+
+			<a href="index.html" class="header__logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+
+			<div class="header__btn">
+				<a href="#" class="btn"><img src="img/login.png" alt="">Вход</a>
+			</div>
+
+		</div>
+	</header>
+	
+	<section class="exercises">
+		<div class="container">
+			<div class="konstruktor__title konstruktor__title--left">
+				<div>
+					<h2>Первая неделя</h2>
+					<a href="#"><span></span>назад</a>
+				</div>
+				<a href="#" class="btn">Добавить день недели</a>
+			</div>
+
+			<div class="konstruktor--step__title">
+				<h3>Понедельник</h3>
+				<p>Выбрать шаблон:</p>
+				<select>
+					<option value="Нет шаблонов">Нет шаблонов</option>	
+				</select>
+			</div>
+
+			<div class="konstruktor--step__comment">
+
+				<div class="konstruktor--step__comment_item">
+					<a href="#" class="konstruktor--step__comment_img gif_open">
+						<span></span>
+						<img src="img/admin--list1.jpg" alt="">
+					</a>
+					<div class="konstruktor--step__comment_option">
+						<a href="#"><img src="img/pen.png" alt=""></a>
+						<a href="#"><img src="img/del.png" alt=""></a>
+					</div>
+					<div class="konstruktor--step__comment_block">
+						<p>
+							<span>Название упражнения:</span>
+							<span><b>Жим  Арнольда</b></span>
+						</p>
+						<p>
+							<span>Количество подходов:</span>
+							<span><b>30</b></span>
+						</p>
+						<p>
+							<span>Время выполнения:</span>
+							<span><b>50 сек</b></span>
+						</p>
+						<p>
+							<span>Количество повторений:</span>
+							<span><b>12</b></span>
+						</p>
+						<p>
+							<span>Комментарий от тренера:</span>
+							<span>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="konstruktor--step__comment_item">
+					<a href="#" class="konstruktor--step__comment_img gif_open">
+						<span></span>
+						<img src="img/admin--list1.jpg" alt="">
+					</a>
+					<div class="konstruktor--step__comment_option">
+						<a href="#"><img src="img/pen.png" alt=""></a>
+						<a href="#"><img src="img/del.png" alt=""></a>
+					</div>
+					<div class="konstruktor--step__comment_block">
+						<p>
+							<span>Название упражнения:</span>
+							<span><b>Жим  Арнольда</b></span>
+						</p>
+						<p>
+							<span>Количество подходов:</span>
+							<span><b>30</b></span>
+						</p>
+						<p>
+							<span>Время выполнения:</span>
+							<span><b>50 сек</b></span>
+						</p>
+						<p>
+							<span>Количество повторений:</span>
+							<span><b>12</b></span>
+						</p>
+						<p>
+							<span>Комментарий от тренера:</span>
+							<span>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+							</span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+
+			<form class="konstruktor--step__form">
+				<div class="konstruktor--step__form_header">
+					<h3>Добавить</h3>
+					<a href="#tabs-one" class="btn">Упражнение из каталога</a>
+					<a href="#tabs-two" class="btn">Свое упражнение </a>
+				</div>
+				<div  id="tabs-one" class="tabs__wrap">
+					<div class="konstruktor--step__form_left">
+						<div class="konstruktor--step__form_img"><img src="img/admin--download.png" alt=""></div>
+						<a href="#" class="btn program_open">Выбрать упражнение</a>
+					</div>
+					<div class="konstruktor--step__form_right">
+						<p>
+							<label for="">Название упражнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Количество подходов/Время выполнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Комментарий</label>
+							<textarea name="" id=""></textarea>
+						</p>
+					</div>
+					<div class="konstruktor--step__form_btn">
+						<button class="btn">Добавить</button>
+					</div>
+				</div>
+				<div  id="tabs-two" class="tabs__wrap">
+					<div class="konstruktor--step__form_left">
+						<div class="konstruktor--step__form_img"><img src="img/admin--download.png" alt=""></div>
+						<a href="#" class="btn">Вибрать</a>
+						<a href="#" class="btn">Сохранить</a>
+					</div>
+					<div class="konstruktor--step__form_right">
+						<p>
+							<label for="">Название упражнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Количество подходов/Время выполнения</label>
+							<input type="text" placeholder="">
+						</p>
+						<p>
+							<label for="">Комментарий</label>
+							<textarea name="" id=""></textarea>
+						</p>
+					</div>
+					<div class="konstruktor--step__form_btn">
+						<button class="btn">Добавить</button>
+					</div>
+				</div>
+
+			</form>
+			
+		</div>
+	</section>
+	
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__col">
+				<p>© Fitlancer, 2019 </p>
+				<p><a href="img/policy.pdf" target="_blank">все права защищены</a></p>
+			</div>
+
+			<div class="footer__col">
+				<h3>O Fitlancer</h3>
+				<ul>
+					<li><a href="#">Как работает Fitlancer?</a></li>
+					<li><a href="img/pol.pdf" target="_blank">Пользовательское соглашение</a></li>
+					<li><a href="img/policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Меню</h3>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="partners.html">Наши тренеры</a></li>
+					<li><a href="list.html">Список упражнений</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Связаться с нами</h3>
+				<div class="footer__soc">
+					<a href="#" target="_blank"><img src="img/footer--in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--tg.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--vk.png" alt=""></a>
+				</div>
+				<a href="mailto:Fitlancerinfo@gmail.com">Fitlancerinfo@gmail.com</a>
+			</div>
+
+			<div class="footer__col">
+				<a href="#" class="btn order_open">Обратная связь</a>
+			</div>
+
+		</div>
+	</footer>
+	
+	<!-- modal -->
+		<div class="modal" id="order">
+			<button class="close order_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal__header login__header">
+				<h3>Обратная связь</h3>
+			</div>
+
+			<form class="login__form">
+				<div class="login__form_line">
+					<input type="text" placeholder="Имя" required>
+				</div>
+				<div class="login__form_line">
+					<input type="email" placeholder="E-mail" required>
+				</div>
+				<div class="login__form_line">
+					<textarea name="" placeholder="Вопрос"></textarea>
+				</div>
+				<div class="login__form_btn">
+					<button class="btn">Войти</button>
+				</div>
+			</form>
+
+		</div>
+
+		<div class="modal--program modal tabs" id="program">
+			<button class="close program_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="exercises__btn">
+				<input type="text" placeholder="Что Вы ищите?">
+				<button></button>
+			</div>
+
+			<div class="modal--program__btn">
+				<p>Группа мышц</p>
+				<ul>
+					<li><a href="#" class="btn">Дельты</a></li>
+					<li><a href="#" class="btn">Бицепс</a></li>
+					<li><a href="#" class="btn">Трицепс</a></li>
+					<li><a href="#" class="btn">Грудные мышци</a></li>
+					<li><a href="#" class="btn">Пресс</a></li>
+					<li><a href="#" class="btn">Спина</a></li>
+					<li><a href="#" class="btn">Ягодицы</a></li>
+					<li><a href="#" class="btn">Ноги</a></li>
+					<li><a href="#" class="btn">Разное</a></li>
+					<li><a href="#" class="btn">Стретчинг</a></li>
+				</ul>
+			</div>
+
+			<div class="admin--list">
+
+				<div  class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list1.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list2.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list3.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list4.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list5.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list6.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list7.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+				<div class="admin--list__item ">
+					<a href="#" class="gif_open">
+						<span></span>
+						<img src="img/admin--list8.jpg" alt="">
+					</a>
+					<p>Название упражнения</p>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		<div class="modal--gif modal" id="gif">
+			<button class="close gif_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal__header login__header">
+				<h3>Название упражнения</h3>
+			</div>
+
+			<img src="img/animation1.gif" alt="">
+		</div>
+	<!-- modal end-->
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>

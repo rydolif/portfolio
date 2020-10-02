@@ -1,0 +1,68 @@
+
+//----------------------FONTS---------------------
+$fonts: 'Montserrat', sans-serif
+//---------------------end-FONTS---------------------
+
+//----------------------COLOR---------------------
+$accent: #E14552
+$title: #141414
+$text: #3F3F3F
+$dark: #1e53a6
+//---------------------end-COLOR---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 16px
+	color: $text
+	line-height: 1.6
+	font-weight: 400
+	min-height: 100vh
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+	+r(1200)
+		font-size: 14px
+
+::selection
+	background-color: $accent
+	color: #fff
+
+::placeholder
+	color: #666
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	line-height: 1.2
+	margin: 0
+	padding: 0
+
+dl, ol, ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+button
+	transition: all .6s
+
+	&:focus,
+	&:hover,
+		outline: none
+		text-decoration: none
+		border: none
+		outline: none
+
+br
+	+r(1200)
+		display: none

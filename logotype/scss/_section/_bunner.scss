@@ -1,0 +1,129 @@
+.bunner {
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 55px;
+	padding-bottom: 45px;
+	color: #ffffff;
+	overflow: hidden;
+
+	&__decor {
+		position: relative;
+			
+		&::before,
+		&::after {
+			content: url(../img/bubble.png);
+			position: absolute;
+		}
+
+		&::before {
+			right: 105%;
+			top: 25px;
+			transform: rotate(-180deg);
+		}
+
+		&::after {
+			left: 105%;
+			top: 0;
+		}
+	}
+
+	&__description {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		width: 47%;
+		transform: rotate(-2deg);
+		
+		&_sale {
+			display: flex;
+			align-items: center;
+		}
+
+		&_percent {
+			font-size: 96px;
+			font-weight: 600;
+		}
+
+		&_text {
+			font-size: 32px;
+			padding-left: 10px;
+			line-height: 1.1;
+		}
+	}
+
+	&__title {
+		font-family: $title;
+		color: #ffffff;
+		font-size: 52px;
+		font-weight: 600;
+		line-height: 1.2;
+	}
+
+	&__subtitle {
+		font-family: $title;
+		font-size: 40px;
+		color: #ffffff;
+		font-weight: 300;
+		line-height: 1.2;
+	}
+
+	&__time { 
+		position: absolute;
+		top: 20px;
+		left: 50%;
+		width: 50vw;
+		font-family: $title;
+		font-size: 24px;
+		transform: rotate(-2deg);
+		background-image: url(../img/bunner--red.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: left center;
+		padding-left: 35px;
+
+		&_title {
+			margin-bottom: 5px;
+		}
+		
+		&_wrap {
+			height: 90px;
+			transform: rotate(-2deg);
+		}
+
+		b {
+			font-size: 48px;
+			font-weight: 600;
+			line-height: 60px;
+		}
+		
+	}
+
+	&--black {
+		background-image: url(../img/bunner--bg.png);
+
+		.bunner__decor {
+			&::before,
+			&::after {
+				content: url(../img/bubble--red.png);
+			}
+		}
+	}
+
+	&--red {
+		background-image: url(../img/bunner--bg-red.png);
+	}
+
+	&--sale {
+		padding-top: 45px;
+
+		.bunner__description {
+			width: 100%;
+			transform: rotate(-2deg);
+			font-family: $title;
+		}
+	}
+}

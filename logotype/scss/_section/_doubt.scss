@@ -1,0 +1,162 @@
+
+.doubt {
+	padding-top: 65px;
+
+	&__title {
+		@extend h2;
+	}
+
+	&__text {
+		@extend .cards__text;
+		margin-bottom: 80px;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__list {
+		@extend .list;
+		width: 65%;
+		
+		&_item {
+			width: 48%;
+			margin-bottom: 65px;
+			z-index: 1;
+		}
+
+		&_number {
+			position: relative;
+			font-size: 52px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			padding-left: 16px;
+			line-height: 1.2;
+
+			span {
+				background-color: #ffffff;
+				z-index: 1;
+				padding: 0 5px;
+			}
+			
+			svg {
+				position: absolute;
+				top: -16px;
+				left: 0;
+				z-index: -1;
+				
+				circle {
+					stroke: var(--accent);
+				}
+			}
+		}
+
+		&_title {
+			font-family: $title;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 5px;
+		}
+
+		&--big {
+			width: 100%;
+
+			.doubt__list_item {
+				width: 31%;
+			}
+		}
+	}
+
+	&__download {
+		width: 31%;
+
+		&_img {
+			width: 100%;
+			margin-bottom: 25px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		&_title {
+			font-family: $title;
+			font-size: 18px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			line-height: 1.4;
+		}
+
+		&_link {
+			color: $border;
+			margin-bottom: 25px;
+			display: block;
+
+			&:hover,
+			&:focus {
+				color: var(--accent);
+			}
+		}
+
+		&_down {
+			font-size: 18px;
+			font-weight: 500;
+			font-family: $title;
+			line-height: 1.4;
+			color: var(--accent);
+
+			svg, path {
+				fill: var(--accent);
+			}
+
+			&:hover,
+			&:focus {
+				color: var(--accent--hover);
+			}
+			
+			svg, path {
+				margin-right: 8px;
+				fill: var(--accent--hover);
+			}
+		}
+	}
+
+	&--dark {
+		.doubt__list_number span {
+			background-color: $bg--dark;
+		}
+
+		.doubt__download_down {
+			svg, path {
+				fill: $white;
+			}
+
+			&:hover,
+			&:focus {
+				color: $border;
+
+				svg {
+					fill: $border;
+				}
+				
+			}
+		}
+	}
+
+	&--icon {
+		svg {
+			position: relative;
+			top: 0;
+		}
+	}
+
+	&--img {
+		img {
+			width: 100%;
+			margin-bottom: 15px;
+			border-radius: 4px;
+		}
+	}
+}

@@ -1,0 +1,94 @@
+.modal
+	display: none
+	justify-content: center
+	align-items: center
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 110vw
+	height: 110vh
+	padding: 30px
+	z-index: 10000
+	background-color: rgba(#000, .5)
+
+	&--open
+		position: relative
+
+	&__close
+		position: absolute
+		right: -35px
+		top: -35px
+		display: block
+		width: 40px
+		height: 40px
+		border-radius: 50%
+		border: none
+		cursor: pointer
+		transition: all .6s
+		background-color: #fff
+
+		+r(576)
+			width: 30px
+			height: 30px
+			top: -15px
+			right: -15px
+			box-shadow: 0 0 15px 0 rgba(#000, .7)
+
+		&:hover,
+		&:focus
+			outline: none
+			transform: rotate(90deg)
+
+			span
+				background: red
+
+		span
+			display: block
+			position: absolute
+			left: 50%
+			top: 50%
+			background: #273a72
+			transition: all .6s
+			border-radius: 4px
+			height: 22px
+			width: 3px
+
+			&:first-child
+				transform: translate(-50%, -50%) rotate(45deg)
+
+			&:last-child
+				transform: translate(-50%, -50%) rotate(-45deg)
+
+	&__form
+		position: relative
+		margin: 20px 0
+		z-index: 1
+		box-shadow: 0 0 16px rgba(0, 0, 0, 0.29)
+		border-radius: 20px
+		background-color: #fff
+		width: 440px
+		text-align: center
+		padding: 30px
+
+	&__title
+		margin-bottom: 20px
+
+	&__line
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 20px
+
+		&:last-child
+			margin-bottom: 0
+		
+	&__input
+		border-radius: 50px
+
+	&__btn
+		@extend .btn
+		width: 100%
+		min-width: 100%
+		border-color: $accent

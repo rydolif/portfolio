@@ -1,0 +1,153 @@
+
+.reviews {
+	padding: 65px 0;
+
+	&__title {
+		@extend h2;
+	}
+
+	&__text {
+		@extend .cards__text;
+
+		a {
+			display: flex;
+			margin-top: 10px;
+			color: var(--accent);
+			font-weight: 500;
+			font-family: $title;
+
+			&:hover,
+			&:focus {
+				color: var(--accent--hover);
+
+				svg, path {
+					fill: var(--accent--hover);
+				}
+			}
+
+			svg, path {
+				margin-right: 10px;
+				fill: var(--accent);
+			}
+		}
+	}
+
+	&__slider {
+		margin-bottom: 25px;
+	}
+
+	&__item {
+		padding: 24px;
+		background-color: $white;
+		border-radius: 4px;
+		transition: all .6s;
+		min-height: 245px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		&_text {
+			margin-bottom: 15px;
+			color: $text;
+		}
+
+		&_info {
+			color: $text;
+			img {
+				float: left;
+				margin-right: 15px;
+			}
+		}
+
+		&_name {
+			font-family: $title;
+			color: $text;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 1.2;
+		}
+
+		&_place {
+			font-size: 16px;
+			color: $text--light;
+		}
+	}
+	
+	&__nav {
+		@extend .cards__nav;
+		padding-top: 0;
+		width: 100%;
+		justify-content: space-between;
+
+		&_pagination {
+			@extend .cards__nav_pagination;
+			min-width: 65px;
+			margin: 0 15px;
+		}
+
+		&_button {
+			display: flex;
+			align-items: center;
+			transition: all .6s;
+			color: $border;
+			outline: none;
+			font-family: $title;
+
+			&:hover,
+			&:focus {
+				color: var(--accent);
+
+				span {
+					background-color: var(--accent);
+					border-color: var(--accent);
+				}
+			}
+
+			span {
+				@extend .cards__nav_button;
+			}
+
+			
+		}
+
+		&_prev {
+			span {
+				@extend .cards__nav_prev;
+				margin-right: 8px;
+			}
+		}
+
+		&_next {
+			span {
+				@extend .cards__nav_next;
+				margin-left: 8px;
+			}
+		}
+	}
+
+	&--dark {
+		.reviews__text a {
+			color: #ffffff;
+
+			svg, path {
+				fill: $white;
+			}
+
+			&:hover,
+			&:focus {
+				color: $border;
+
+				svg, path {
+					fill: $border;
+				}
+			}
+		}
+
+		.reviews__item {
+			&:hover,
+			&:focus {
+				box-shadow: 0px 4px 24px rgba(255, 255, 255, 0.32);
+			}
+		}
+	}
+}

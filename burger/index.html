@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<!-- meta tags -->
+		<meta charset="utf-8">
+		<title>Burger</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="theme-color" content="#000">
+
+	<!-- favicon -->
+		<link rel="icon" href="img/favicon.ico">
+
+	<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Coustard:400,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+	<!-- stylesheet -->
+
+		<!-- full min -->
+			<link rel="stylesheet" href="css/main.min.css">
+
+		<!-- full -->
+			<!--<link rel="stylesheet" href="css/main.css"> -->
+
+	<!-- stylesheet-end -->
+
+</head>
+
+<body>
+	
+	<!-- button-up -->
+		<div class="button-up click">
+			<a href="#hero" class=""></a>
+		</div>
+	<!-- button-up-end -->
+
+	<!-- preloader -->
+		<div id="preloader">
+			<div id="ctn-preloader" class="ctn-preloader">
+				<div class="animation-preloader">
+					<div class="spinner"></div>
+					<div class="txt-loading">
+						<span data-text-preloader="B" class="letters-loading">
+							B
+						</span>
+						<span data-text-preloader="U" class="letters-loading">
+							U
+						</span>
+						<span data-text-preloader="R" class="letters-loading">
+							R
+						</span>
+						<span data-text-preloader="G" class="letters-loading">
+							G
+						</span>
+						<span data-text-preloader="E" class="letters-loading">
+							E
+						</span>
+						<span data-text-preloader="R" class="letters-loading">
+							R
+						</span>
+					</div>
+				</div>
+				<div class="loader-section section-left"></div>
+				<div class="loader-section section-right"></div>
+			</div>
+		</div>
+	<!-- preloader-end -->
+
+	<!-- header -->
+		<header class="header">
+			<div class="container header__container">
+		
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+
+				<button class="hamburger" type="button">
+					<span class="hamburger__box">
+						<span class="hamburger__item"></span>
+					</span>
+				</button>
+
+				<nav class="nav click">
+					<ul>
+						<li><a href="#hero">Main</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#ingredients">Ingredients</a></li>
+						<li><a href="#order">Reservation</a></li>
+						<li><a href="#reviews">Reviews</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#contacts">Contacts</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__soc">
+					<a href="#" target="_blank"><img src="img/insta.svg" alt=""></a>
+					<a href="#" target="_blank"><img src="img/facebook.svg" alt=""></a>
+				</div>
+
+			</div>
+		</header>
+	<!-- header-end -->
+	
+	<!-- hero -->
+		<section class="hero" id="hero">
+			<div class="container hero__container">
+
+				<p class="hero__sub-title">got hungry ???</p>
+				<p class="hero__text">do not waste time in vain!</p>
+				<h1>Lorem ipsum dolor sit!!!</h1>
+				<a href="#" class="btn">Order a Franchise</a>
+
+				<div class="hero__down click">
+					<a href="#menu"><img src="img/down.png" alt=""></a>
+				</div>
+			</div>
+		</section>
+	<!-- hero-end -->
+
+	<!-- menu -->
+		<section class="menu section" id="menu">
+			<div class="container menu__container">
+
+				<img src="img/parallax1.png" alt="" class="parallax parallax--one">
+				<img src="img/parallax2.png" alt="" class="parallax parallax--two">
+
+
+				<div class="gallery__title">
+					<img src="img/decoration-text.svg" alt="" class="gallery__title_after">
+					<h2 class="wow fadeInUp" data-wow-duration="1s">Menu</h2>
+					<p class="gallery__title_sub-title section__sub-title wow fadeInUp" data-wow-duration="1s">the most delicious</p>
+					<img src="img/hero-sub-title2.svg" alt="" class="gallery__title_before">
+				</div>
+
+
+				<div id="filters" class="menu__nav button-group"> 
+					<button class="menu__button button is-checked" data-filter="*">All</button>
+					<button class="menu__button button" data-filter=".burger">Burger</button>
+					<button class="menu__button button" data-filter=".sandwich">Sandwich</button>
+					<button class="menu__button button" data-filter=".hamburgers">Hamburgers</button>
+				</div>
+
+				<div class="menu__grid">
+					<div class="menu__item burger">
+						<img src="img/menu1.jpg" alt="">
+						<div class="menu__item_info">
+							<p class="menu__item_info--price">
+								<span>16$</span>
+								<span>320g</span>
+							</p>
+							<p class="menu__item_info--name">EL Classico</p>
+						</div>
+						<div class="menu__item_consist">
+							<div class="menu__item_consist--title">consist</div>
+							<ul class="menu__item_consist--list">
+								<li>Cheese</li>
+								<li>Potatoes</li>
+								<li>Scull</li>
+								<li>Sauce</li>
+								<li>Sauce</li>
+								<li>Mushrooms sauce scull cheese</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__item sandwich">
+						<img src="img/menu2.jpg" alt="">
+						<div class="menu__item_info">
+							<p class="menu__item_info--price">
+								<span>16$</span>
+								<span>320g</span>
+							</p>
+							<p class="menu__item_info--name">EL Classico</p>
+						</div>
+						<div class="menu__item_consist">
+							<div class="menu__item_consist--title">consist</div>
+							<ul class="menu__item_consist--list">
+								<li>Cheese</li>
+								<li>Potatoes</li>
+								<li>Scull</li>
+								<li>Sauce</li>
+								<li>Sauce</li>
+								<li>Mushrooms sauce scull cheese</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__item hamburgers">
+						<img src="img/menu3.jpg" alt="">
+						<div class="menu__item_info">
+							<p class="menu__item_info--price">
+								<span>16$</span>
+								<span>320g</span>
+							</p>
+							<p class="menu__item_info--name">EL Classico</p>
+						</div>
+						<div class="menu__item_consist">
+							<div class="menu__item_consist--title">consist</div>
+							<ul class="menu__item_consist--list">
+								<li>Cheese</li>
+								<li>Potatoes</li>
+								<li>Scull</li>
+								<li>Sauce</li>
+								<li>Sauce</li>
+								<li>Mushrooms sauce scull cheese</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__item burger">
+						<img src="img/menu1.jpg" alt="">
+						<div class="menu__item_info">
+							<p class="menu__item_info--price">
+								<span>16$</span>
+								<span>320g</span>
+							</p>
+							<p class="menu__item_info--name">EL Classico</p>
+						</div>
+						<div class="menu__item_consist">
+							<div class="menu__item_consist--title">consist</div>
+							<ul class="menu__item_consist--list">
+								<li>Cheese</li>
+								<li>Potatoes</li>
+								<li>Scull</li>
+								<li>Sauce</li>
+								<li>Sauce</li>
+								<li>Mushrooms sauce scull cheese</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__item sandwich">
+						<img src="img/menu2.jpg" alt="">
+						<div class="menu__item_info">
+							<p class="menu__item_info--price">
+								<span>16$</span>
+								<span>320g</span>
+							</p>
+							<p class="menu__item_info--name">EL Classico</p>
+						</div>
+						<div class="menu__item_consist">
+							<div class="menu__item_consist--title">consist</div>
+							<ul class="menu__item_consist--list">
+								<li>Cheese</li>
+								<li>Potatoes</li>
+								<li>Scull</li>
+								<li>Sauce</li>
+								<li>Sauce</li>
+								<li>Mushrooms sauce scull cheese</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu__item hamburgers">
+						<img src="img/menu3.jpg" alt="">
+						<div class="menu__item_info">
+							<p class="menu__item_info--price">
+								<span>16$</span>
+								<span>320g</span>
+							</p>
+							<p class="menu__item_info--name">EL Classico</p>
+						</div>
+						<div class="menu__item_consist">
+							<div class="menu__item_consist--title">consist</div>
+							<ul class="menu__item_consist--list">
+								<li>Cheese</li>
+								<li>Potatoes</li>
+								<li>Scull</li>
+								<li>Sauce</li>
+								<li>Sauce</li>
+								<li>Mushrooms sauce scull cheese</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	<!-- menu-end -->
+
+	<!-- ingredients -->
+		<section class="ingredients section" id="ingredients">
+			<div class="container section__container">
+
+				<img src="img/parallax5.png" alt="" class="parallax parallax--five">
+				<img src="img/parallax4.png" alt="" class="parallax parallax--six">
+				<img src="img/parallax3.png" alt="" class="parallax parallax--three">
+				<img src="img/parallax6.png" alt="" class="parallax parallax--four">
+
+				<div class="ingredients__list ingredients__list--one">
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>Sauces</h3>
+						<ul>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Bourgeois</span>
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Cheese</span>
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Garlic</span> 
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Italian</span> 
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Lorem</span>
+							</li>
+						</ul>
+					</div>
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>Supplements</h3>
+						<ul>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Bourgeois</span>
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Cheese</span>
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Garlic</span> 
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Italian</span> 
+							</li>
+							<li>
+								<span>50 <sub>g</sub></span>
+								<span>Lorem</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ingredients__list ingredients__list--price ingredients__list--two">
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>Salads</h3>
+						<ul>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>Soups</h3>
+						<ul>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ingredients__list ingredients__list--price ingredients__list--three">
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>Hot Dogs</h3>
+						<ul>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									romano leaves, caesar sauce,
+									<br>Parmesan cheese. cherry
+									<br>grilled chicken fillet
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>Pizza</h3>
+						<ul>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									romano leaves, caesar sauce,
+									<br>Parmesan cheese. cherry
+									<br>grilled chicken fillet
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="ingredients__list ingredients__list--price ingredients__list--four">
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>Sandwiches</h3>
+						<ul>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									romano leaves, caesar sauce,
+									<br>Parmesan cheese. cherry
+									<br>grilled chicken fillet
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="ingredients__item wow fadeInUp" data-wow-duration="1s">
+						<h3>The Brinks</h3>
+						<ul>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+								</p>
+							</li>
+							<li>
+								<p>
+									<span>310 $</span>
+									<span>350 <sub>g</sub></span>
+								</p>
+								<p>
+									<span>Dish name</span>
+									The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+								</p>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	<!-- ingredients-end -->
+
+	<!-- tables -->
+		<section class="tables section" id="tables">
+			<div class="container">
+
+				<div class="tables__title philosophy__title">
+					<img src="img/decoration-text.svg" alt="" class="philosophy__title_after">
+					<h2 class="wow fadeInUp" data-wow-duration="1s">Vacancies</h2>
+					<p class="philosophy__title_sub-title section__sub-title wow fadeInUp" data-wow-duration="1s">empty seats in the hall</p>
+					<img src="img/hero-sub-title.svg" alt="" class="philosophy__title_before">
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6 col-lg-3">
+						<div class="tables__item">
+							<p class="tables__number">13</p>
+							<h3>VIP places</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, magni.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="tables__item">
+							<p class="tables__number">26</p>
+							<h3>Reserved seats</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, sit.</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="tables__item">
+							<p class="tables__number">3</p>
+							<h3>Places for a big company</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, molestiae!</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-lg-3">
+						<div class="tables__item">
+							<p class="tables__number">10</p>
+							<h3>Places for two</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, excepturi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- tables-end -->
+
+	<!-- order -->
+		<section class="order section" id="order">
+			<div class="container order__container">
+
+				<div class="order__bg">
+					<img src="img/order-bg.jpg" alt="">
+				</div>
+
+				<div class="order__content">
+					<div class="order__title">
+						<img src="img/decoration-text.svg" alt="" class="order__title_after">
+						<h2 class="wow fadeInUp" data-wow-duration="1s">Reservation</h2>
+						<img src="img/decoration-text2.svg" alt="" class="order__title_before">
+					</div>
+					<div class="order__tel">
+						<a href="tel:">+7 000 123- 24-35</a>
+						<br>
+						<a href="tel:">+7 000 123- 24-35</a>
+					</div>
+					<div class="order__place">
+						<span>We are located at:</span>
+						<p>New York Wall Street 63-83 Broadway</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	<!-- order-end -->
+	
+	<!-- reviews -->
+		<section class="reviews section" id="reviews">
+			<div class="container">
+				
+				<div class="philosophy__title">
+					<img src="img/decoration-text.svg" alt="" class="philosophy__title_after">
+					<h2 class="wow fadeInUp" data-wow-duration="1s">Reviews</h2>
+					<p class="philosophy__title_sub-title section__sub-title wow fadeInUp" data-wow-duration="1s">they talk about us</p>
+					<img src="img/hero-sub-title2.svg" alt="" class="philosophy__title_before">
+				</div>
+				
+				<div class="reviews__slider">
+					<div class="reviews__item">
+						<img src="img/reviews-item.svg" alt="">
+						<h3>Bill Ostin</h3>
+						<p>
+							“Nor is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but occasionally circumstances occur in which toil and pain can procure him some great pleasure.”
+						</p>
+					</div>
+					<div class="reviews__item">
+						<img src="img/reviews-item.svg" alt="">
+						<h3>Ostin Bill</h3>
+						<p>
+							A delectus, quasi ad asperiores assumenda eum. Officia aliquam quam voluptas, minima, quisquam iure eaque quasi delectus magnam quod assumenda alias maiores commodi, explicabo nemo repellendus numquam inventore nulla doloribus, vel. Esse non sit aperiam voluptates recusandae quidem aspernatur reprehenderit, iste similique!	
+						</p>
+					</div>
+					<div class="reviews__item">
+						<img src="img/reviews-item.svg" alt="">
+						<h3>Rud Ostin</h3>
+						<p>
+							The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.	
+						</p>
+					</div>
+					<div class="reviews__item">
+						<img src="img/reviews-item.svg" alt="">
+						<h3>Bill Maklay</h3>
+						<p>
+							Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. “It's not Latin, though it looks like it, and it actually says nothing,” Before & After magazine answered a curious reader, “Its ‘words’ loosely approximate the frequency with which letters occur in English, which is why at a glance it looks pretty real.”
+						</p>
+					</div>
+					<div class="reviews__item">
+						<img src="img/reviews-item.svg" alt="">
+						<h3>Lorem Ipsum</h3>
+						<p>
+							The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	<!-- reviews-end -->
+
+	<!-- gallery -->
+		<section class="gallery section" id="gallery">
+			<div class="container gallery__container">
+
+				<div class="gallery__title">
+					<img src="img/decoration-text.svg" alt="" class="gallery__title_after">
+					<h2 class="wow fadeInUp" data-wow-duration="1s">Gallery</h2>
+					<p class="gallery__title_sub-title section__sub-title wow fadeInUp" data-wow-duration="1s">we and our clients</p>
+					<img src="img/gallery-decoration.svg" alt="" class="gallery__title_before">
+				</div>
+
+				<div class="gallery__slider">
+
+					<div class="gallery__slide">
+						<div><img src="img/menu1.jpg" alt=""></div>
+					</div>
+					<div class="gallery__slide">
+						<div><img src="img/menu2.jpg" alt=""></div>
+					</div>
+					<div class="gallery__slide">
+						<div><img src="img/menu3.jpg" alt=""></div>
+					</div>
+					<div class="gallery__slide">
+						<div><img src="img/menu2.jpg" alt=""></div>
+					</div>
+					<div class="gallery__slide">
+						<div><img src="img/menu1.jpg" alt=""></div>
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</section>
+	<!-- gallery-end -->
+
+	<!-- philosophy -->
+		<section class="philosophy section" id="philosophy">
+			<div class="container philosophy__container">
+
+				<img src="img/parallax7.png" alt="" class="parallax parallax--seven">
+				<img src="img/parallax8.png" alt="" class="parallax parallax--eight">
+
+				<div class="philosophy__title">
+					<img src="img/decoration-text.svg" alt="" class="philosophy__title_after">
+					<h2 class="wow fadeInUp" data-wow-duration="1s">Our Philosophy</h2>
+					<p class="philosophy__title_sub-title section__sub-title wow fadeInUp" data-wow-duration="1s">the goal and mission of our team</p>
+					<img src="img/hero-sub-title.svg" alt="" class="philosophy__title_before">
+				</div>
+
+				<div class="philosophy__list">
+					<div class="philosophy__item">
+						<img src="img/parallax1.png" alt="" class="philosophy__item_img">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt, voluptates blanditiis facere debitis sapiente omnis officiis necessitatibus vel animi architecto libero qui, itaque saepe sint, facilis amet, provident adipisci assumenda aspernatur cupiditate ipsa autem.
+						</p>
+					</div>
+					<div class="philosophy__item">
+						<img src="img/parallax2.png" alt="" class="philosophy__item_img">
+						<p>
+							A delectus, quasi ad asperiores assumenda eum. Officia aliquam quam voluptas, minima, quisquam iure eaque quasi delectus magnam quod assumenda alias maiores commodi, explicabo nemo repellendus numquam inventore nulla doloribus, vel. Esse non sit aperiam voluptates recusandae quidem aspernatur reprehenderit, iste similique!	
+						</p>
+					</div>
+					<div class="philosophy__item">
+						<img src="img/parallax5.png" alt="" class="philosophy__item_img">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt, voluptates blanditiis facere debitis sapiente omnis officiis necessitatibus vel animi architecto libero qui, itaque saepe sint, facilis amet, provident adipisci assumenda aspernatur cupiditate ipsa autem.
+						</p>
+					</div>
+					<div class="philosophy__item">
+						<img src="img/parallax6.png" alt="" class="philosophy__item_img">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab deserunt, voluptates blanditiis facere debitis sapiente omnis officiis necessitatibus vel animi architecto libero qui, itaque saepe sint, facilis amet, provident adipisci assumenda aspernatur cupiditate ipsa autem.
+						</p>
+					</div>
+					<div class="philosophy__item">
+						<img src="img/parallax3.png" alt="" class="philosophy__item_img">
+						<p>
+							The placeholder text, beginning with the line “Lorem ipsum dolor sit amet, consectetur adipiscing elit”, looks like Latin because in its youth, centuries ago, it was Latin.
+						</p>
+					</div>
+					<div class="philosophy__item">
+						<img src="img/parallax1.png" alt="" class="philosophy__item_img">
+						<p>
+							A delectus, quasi ad asperiores assumenda eum. Officia aliquam quam voluptas, minima, quisquam iure eaque quasi delectus magnam quod assumenda alias maiores commodi, explicabo nemo repellendus numquam inventore nulla doloribus, vel. Esse non sit aperiam voluptates recusandae quidem aspernatur reprehenderit, iste similique!
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+	<!-- philosophy-end -->
+
+	<!-- contacts -->
+		<section class="contacts section" id="contacts">
+			<div class="container section__container">
+
+				<img src="img/parallax9.png" alt="" class="parallax--nine">
+
+				<div class="gallery__title">
+					<img src="img/decoration-text.svg" alt="" class="gallery__title_after">
+					<h2 class="wow fadeInUp" data-wow-duration="1s">Contact Us</h2>
+					<p class="gallery__title_sub-title section__sub-title wow fadeInUp" data-wow-duration="1s">we and our clients</p>
+					<img src="img/hero-sub-title2.svg" alt="" class="gallery__title_before">
+				</div>
+
+				<div class="row">
+					<div class="order-md-12 col-md-5 col-lg-6">
+						<div class="contacts__content">
+							<div class="contacts__content_item wow fadeInUp" data-wow-duration="1s">
+								<h3>We are located at:</h3>
+								<p>New York Wall Street 63-83 Broadway</p>
+							</div>
+							<div class="contacts__content_item wow fadeInUp" data-wow-duration="1s">
+								<h3>Our mail</h3>
+								<a href="mailto:info@yourmail.com">info@yourmail.com</a>
+								<br>
+								<a href="mailto:info@yourmail.com">info@yourmail.com</a>
+							</div>
+							<div class="contacts__content_item wow fadeInUp" data-wow-duration="1s">
+								<h3>Our phone:</h3>
+								<a href="tel:+70001232435">+7 000 123- 24-35</a>
+								<br>
+								<a href="tel:+70001232435">+7 000 123- 24-35</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="order-md-1 col-md-7 col-lg-6">
+						<div class="contacts__map" id="map"></div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+	<!-- contacts-end -->
+
+	<!-- footer -->
+		<footer class="footer">
+			<div class="container footer__container header__container">
+		
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.svg" alt="logo">
+				</a>
+
+				<nav class="footer__nav nav click">
+					<ul>
+						<li><a href="#hero">Main</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#ingredients">Ingredients</a></li>
+						<li><a href="#order">Reservation</a></li>
+						<li><a href="#reviews">Reviews</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#contacts">Contacts</a></li>
+					</ul>
+				</nav>
+
+				<div class="header__soc">
+					<a href="#" target="_blank"><img src="img/insta.svg" alt=""></a>
+					<a href="#" target="_blank"><img src="img/facebook.svg" alt=""></a>
+				</div>
+
+			</div>
+		</footer>
+	<!-- footer-end -->
+
+	<!-- script -->
+		<!-- full min -->
+			<script src="js/scripts.min.js"></script>
+
+		<!-- full -->
+			<!-- <script src="js/scripts.js"></script> -->
+
+		<!-- map -->
+		    <script>
+		      function initMap() {
+		        var uluru = {lat: 34.9307386, lng: 33.6249393};
+		     	var map=new google.maps.Map(document.getElementById("map"),{zoom:16,center:uluru,styles:[{featureType:"all",elementType:"labels.text.fill",stylers:[{saturation:36},{color:"#000000"},{lightness:40}]},{featureType:"all",elementType:"labels.text.stroke",stylers:[{visibility:"on"},{color:"#000000"},{lightness:16}]},{featureType:"all",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"administrative",elementType:"geometry.fill",stylers:[{color:"#000000"},{lightness:20}]},{featureType:"administrative",elementType:"geometry.stroke",stylers:[{color:"#000000"},{lightness:17},{weight:1.2}]},{featureType:"landscape",elementType:"geometry",stylers:[{color:"#000000"},{lightness:20}]},{featureType:"poi",elementType:"geometry",stylers:[{color:"#000000"},{lightness:21}]},{featureType:"road.highway",elementType:"geometry.fill",stylers:[{color:"#000000"},{lightness:17}]},{featureType:"road.highway",elementType:"geometry.stroke",stylers:[{color:"#000000"},{lightness:29},{weight:.2}]},{featureType:"road.arterial",elementType:"geometry",stylers:[{color:"#000000"},{lightness:18}]},{featureType:"road.local",elementType:"geometry",stylers:[{color:"#000000"},{lightness:16}]},{featureType:"transit",elementType:"geometry",stylers:[{color:"#000000"},{lightness:19}]},{featureType:"water",elementType:"geometry",stylers:[{color:"#000000"},{lightness:17}]}]});
+
+		          var marker = new google.maps.Marker({
+		            position: uluru,
+		            map: map,
+		            icon: 'img/mark.png'
+		          });
+
+		          var infowindow = new google.maps.InfoWindow({
+		            });
+
+		          }
+		    </script>
+		    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnk4RCDwjSucIJ2WXRnLkuCrsWR4DUM4&callback=initMap"></script>
+
+	<!-- script-end -->
+
+
+
+</body>
+</html>

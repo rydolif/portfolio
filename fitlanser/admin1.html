@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Admin 1</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" href="img/favicon.ico">
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css?v=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:600&display=swap&subset=cyrillic" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__container container">
+
+			<button class="hamburger" type="button">
+				<span class="hamburger__item"></span>
+			</button>
+
+			<nav class="header__nav nav">
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Наши тренеры</a></li>
+					<li><a href="#">Список упражнений</a></li>
+				</ul>
+			</nav>
+
+			<a href="index.html" class="header__logo">
+				<img src="img/logo.png" alt="logo">
+			</a>
+
+			<div class="header__btn">
+				<a href="#" class="btn"><img src="img/login.png" alt="">Вход</a>
+			</div>
+
+		</div>
+	</header>
+
+	<section class="exercises">
+		<form class="container">
+
+			<div class="admin__btn exercises__btn">
+				<a href="#" class="btn">Каталог анимаций</a>
+				<a href="#" class="btn">Загрузить анимацию</a>
+			</div>
+			
+			<div class="admin--download">
+				
+				<div class="admin--download__left">
+					<a href="#" class="admin--download__left_img">
+						<img src="img/admin--download.png" alt="">
+					</a>
+					<a href="#" class="btn">Выберите файл</a>
+					<a href="#" class="btn">Загрузить</a>
+				</div>
+
+				<div class="admin--download__right">
+
+					<div class="admin--download__right_line">
+						<p class="admin--download__right_title">Группа мышц</p>
+						<div class="admin--download__right_block">
+							<div class="block">
+								<div class="block__header">
+									<span class="arrow"></span>
+									<p>Группа мышц</p>
+								</div>
+								<div class="admin--download__right_list block__content">
+									<input type="checkbox" id="press" name="select" checked>
+									<label for="press">Пресс</label>
+
+									<input type="checkbox" id="nogi" name="select">
+									<label for="nogi">Ноги</label>
+								</div>
+							</div>
+							<div class="admin--download__right_radio">
+								<input type="radio" id="list" name="exercises" checked>
+								<label for="list">Общий список упражнений</label>
+
+								<input type="radio" id="home" name="exercises">
+								<label for="home">Упражнения для дома</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="admin--download__right_line">
+						<p class="admin--download__right_title">Название</p>
+						<p class="admin--download__right_block">
+							<input type="text" placeholder="Название">
+						</p>
+					</div>
+
+					<div class="admin--download__right_line">
+						<p class="admin--download__right_title">Описание</p>
+						<p class="admin--download__right_block">
+							<textarea name="" id="" placeholder="Описание"></textarea>
+						</p>
+					</div>
+					<div class="admin--download__right_line admin--download__right_line--btn">
+						<span></span>
+						<button class="btn">Добавить</button>
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</form>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container container">
+
+			<div class="footer__col">
+				<p>© Fitlancer, 2019 </p>
+				<p><a href="img/policy.pdf" target="_blank">все права защищены</a></p>
+			</div>
+
+			<div class="footer__col">
+				<h3>O Fitlancer</h3>
+				<ul>
+					<li><a href="#">Как работает Fitlancer?</a></li>
+					
+					<li><a href="img/pol.pdf" target="_blank">Пользовательское соглашение</a></li>
+					<li><a href="img/policy.pdf" target="_blank">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Меню</h3>
+				<ul>
+					<li><a href="#">О нас</a></li>
+					<li><a href="partners.html">Наши тренеры</a></li>
+					<li><a href="list.html">Список упражнений</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__col">
+				<h3>Связаться с нами</h3>
+				<div class="footer__soc">
+					<a href="#" target="_blank"><img src="img/footer--in.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--tg.png" alt=""></a>
+					<a href="#" target="_blank"><img src="img/footer--vk.png" alt=""></a>
+				</div>
+				<a href="mailto:Fitlancerinfo@gmail.com">Fitlancerinfo@gmail.com</a>
+			</div>
+
+			<div class="footer__col">
+				<a href="#" class="btn order_open">Обратная связь</a>
+			</div>
+
+		</div>
+	</footer>
+	
+	<!-- modal -->
+		<div class="modal" id="order">
+			<button class="close order_close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+
+			<div class="modal__header login__header">
+				<h3>Обратная связь</h3>
+			</div>
+
+			<form class="login__form">
+				<div class="login__form_line">
+					<input type="text" placeholder="Имя" required>
+				</div>
+				<div class="login__form_line">
+					<input type="email" placeholder="E-mail" required>
+				</div>
+				<div class="login__form_line">
+					<textarea name="" placeholder="Вопрос"></textarea>
+				</div>
+				<div class="login__form_btn">
+					<button class="btn">Войти</button>
+				</div>
+			</form>
+
+		</div>
+	<!-- modal end-->
+
+	<script src="js/scripts.min.js"></script>
+
+
+</body>
+</html>
